@@ -1,43 +1,74 @@
 import React from 'react';
 import { ServicePageLayout } from '../components/ServicePageLayout';
-import { ServicePageData } from '../types';
 
-const data: ServicePageData = {
+const data = {
   slug: 'voice-agents',
-  heroTitle: "AI Voice Agents That Never Sleep",
-  heroSubtitle: "24/7 automated phone answering, appointment booking, and lead qualification. Never miss a potential commission due to a missed call again.",
+  heroTitle: "AI Voice Agents Answer Your Phone So You Don't Have To",
+  heroSubtitle: "24/7 Phone Answering & Appointment Booking. Conversational AI that handles property questions and qualifies leads while you're in showings.",
   whatIsIt: {
     title: "What are Voice Agents?",
-    description: "Voice Agents are AI-powered assistants that handle calls with natural, human-like conversations. They answer instantly, book appointments on your calendar, answer property questions, and qualify leads. Unlike voicemail, they actually solve the caller's problem."
+    description: "It's not an answering service taking messages; it's conversational software that handles the call start to finish. It answers property questions, books showings, and qualifies sellers.",
   },
   whyNeedIt: {
-    title: "The Cost of Missed Calls",
-    description: "The average agent misses 47% of calls. 80% of callers won't leave a voicemail—they just call the next agent. A missed call is often a lost $10k commission. Voice agents ensure 100% answer rate.",
+    title: "The Missed Call Problem",
+    description: "Average agents miss 60% of calls while in appointments. 80% of callers won't leave a voicemail—they call the next agent. A missed call is a missed $15k commission.",
     stats: [
-      { value: "100%", label: "Call Answer Rate" },
-      { value: "24/7", label: "Availability (Nights & Weekends)" },
-      { value: "$0", label: "Cost of hiring human receptionists" }
+      { value: "60%", label: "Average missed call rate" },
+      { value: "100%", label: "Answer rate with AI" },
+      { value: "70%", label: "Calls resolved without human intervention" }
     ]
   },
   features: [
-    { title: "Intelligent Answering", description: "Answers within 2 rings with context-aware, natural conversation." },
-    { title: "Appointment Scheduling", description: "Integrates with your calendar to book showings and consultations directly." },
-    { title: "Lead Qualification", description: "Asks budget, timeline, and pre-approval questions before notifying you." },
-    { title: "Property Q&A", description: "Pull info from your listings to answer specific questions about homes." },
-    { title: "Multi-Language", description: "Fluent in Spanish and 40+ other languages to serve diverse markets." },
-    { title: "Call Transcription", description: "Full text logs of every call sent to your CRM and email instantly." }
+    { title: "Property Inquiry Handling", description: "Trained on your listings to provide price and spec info instantly." },
+    { title: "Live Warm Transfers", description: "Urgent or VIP calls can be routed to your cell with context." },
+    { title: "Booking Integration", description: "Scheduling showing appointments directly on your calendar." },
+    { title: "CRM Logging", description: "Full transcripts and summaries automatically saved to your lead records." },
+    { title: "Seller Qualification", description: "Asking address, timeline, and motivation during initial inbound." }
+  ],
+  process: {
+    title: "Setup and Customization",
+    steps: [
+      { title: "Discovery", desc: "Gathering your listing info, talking points, and preferred call flows." },
+      { title: "Training", desc: "Configuring the AI with your business hours, location, and specialties." },
+      { title: "Testing & Launch", desc: "Refining responses through test calls before going live." }
+    ]
+  },
+  timeline: [
+    { period: "Limitations", desc: "AI can't handle complex negotiations or interpret market nuances. It hands these to you." },
+    { period: "Outcome", desc: "Callers appreciate immediate help. 'They actually answer' becomes your differentiator." }
   ],
   pricing: [
-    { name: "Essential", price: "$497/mo", features: ["1 Phone Number", "24/7 Answering", "Basic Booking", "500 Mins Included"] },
-    { name: "Professional", price: "$997/mo", features: ["Multiple Numbers", "Advanced Qual.", "Lead Scoring", "1,500 Mins Included"], recommended: true },
-    { name: "Enterprise", price: "$1,997/mo", features: ["Unlimited Numbers", "Team Routing", "Custom Logic", "5,000 Mins Included"] }
+    { 
+      name: "Basic Voice Agent", 
+      price: "$497/mo", 
+      setup: "$300",
+      features: [
+        "Single phone number",
+        "Property inquiry handling",
+        "Appointment booking",
+        "CRM integration",
+        "Up to 500 minutes"
+      ]
+    },
+    { 
+      name: "Professional Voice Agent", 
+      price: "$997/mo", 
+      setup: "$300",
+      features: [
+        "Multiple phone numbers",
+        "Custom scripting",
+        "Advanced qualification",
+        "Call transfer protocols",
+        "Up to 1,500 minutes"
+      ],
+      recommended: true
+    }
   ],
   faq: [
-    { question: "Do they sound robotic?", answer: "No. Modern AI voice tech is remarkably natural, using pauses, fillers, and emotional tone matching." },
-    { question: "Can they transfer to me?", answer: "Yes. For urgent matters or VIPs, the agent can warm transfer the call to your cell instantly." },
-    { question: "Is it compliant?", answer: "Yes, our system complies with all recording laws and can include automatic disclosures if required." }
+    { question: "What if someone demands to speak with a human?", answer: "The AI transfers immediately and notifies you with context about why they called." },
+    { question: "Can it access my MLS listings?", answer: "Yes, we integrate with listing feeds so it has current property data to reference." }
   ],
-  ctaText: "Activate Voice Agents"
+  ctaText: "Listen to Tech Demo"
 };
 
 export const VoiceAgents: React.FC = () => <ServicePageLayout data={data} />;

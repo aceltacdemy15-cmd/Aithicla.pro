@@ -125,12 +125,12 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <Link to="/" className="flex items-center gap-3 z-50 group interactive-hover">
             <div className="relative">
               <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-xl relative z-10 transition-colors duration-300 ${isScrolled ? 'bg-brand-blue text-white' : 'bg-white text-brand-blue'}`}>
-                E
+                A
               </div>
               <div className="absolute inset-0 bg-brand-teal blur-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <span className={`font-heading font-bold text-2xl tracking-tight ${isScrolled ? 'text-white' : 'text-white'}`}>
-              EthicalPro
+              Aithical.pro
             </span>
           </Link>
 
@@ -190,12 +190,12 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <div>
             <div className="flex items-center gap-2 mb-8">
               <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center font-bold text-white text-xl shadow-[0_0_20px_rgba(30,58,138,0.5)]">
-                E
+                A
               </div>
-              <span className="font-heading font-bold text-2xl">EthicalPro</span>
+              <span className="font-heading font-bold text-2xl">Aithical.pro</span>
             </div>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              EthicalPro is a specialized AI visibility and marketing automation platform designed exclusively for real estate professionals.
+              Aithical.pro is a specialized AI visibility and marketing automation platform designed exclusively for real estate professionals.
             </p>
             <div className="flex gap-4">
               {[1, 2, 3].map((i) => (
@@ -240,7 +240,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                 <div className="p-3 rounded-lg bg-white/5 group-hover:bg-brand-orange/20 transition-colors">
                   <Mail className="text-brand-orange" size={20} />
                 </div>
-                <span>hello@ethicalpro.com</span>
+                <span>hello@aithical.pro</span>
               </li>
               <li className="flex items-center gap-4 group">
                 <div className="p-3 rounded-lg bg-white/5 group-hover:bg-brand-orange/20 transition-colors">
@@ -253,7 +253,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         </div>
 
         <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} EthicalPro. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Aithical.pro. All rights reserved.</p>
         </div>
       </footer>
     </div>

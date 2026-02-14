@@ -1,43 +1,62 @@
 import React from 'react';
 import { ServicePageLayout } from '../components/ServicePageLayout';
-import { ServicePageData } from '../types';
 
-const data: ServicePageData = {
+const data = {
   slug: 'email-marketing',
-  heroTitle: "Email Automation That Retains Clients",
-  heroSubtitle: "Stay top-of-mind with every lead and past client automatically. Nurture leads until they buy, and turn past clients into referral machines.",
+  heroTitle: "Email Automation Sends the Right Message at the Right Time—Automatically",
+  heroSubtitle: "Stay in Touch Without Manual Effort. Pre-written sequences that send based on where someone is in the buying/selling process.",
   whatIsIt: {
-    title: "What is Email Automation?",
-    description: "It's a systematic approach to relationship maintenance. Instead of manual follow-ups, our system sends personalized welcome sequences, property alerts, market updates, and home anniversary emails based on client behavior. It ensures no lead falls through the cracks."
+    title: "What is it?",
+    description: "It replaces the 'intention vs. reality' cycle of database management. Every person gets relevant messages without you manually hitting send.",
   },
   whyNeedIt: {
-    title: "The Relationship Crisis",
-    description: "Most agents give up after 2 contacts, but buyers need 8-12 touches. 88% of clients say they'd use their agent again, but only 12% do because they forget them. Automation solves this retention gap permanently.",
+    title: "The Follow-Up Problem",
+    description: "Manual email follow-up doesn't scale. You do it for 2 months, get busy, and go silent for 6. Automation is consistent, relevant, and scalable.",
     stats: [
-      { value: "$42", label: "ROI for every $1 spent on email" },
-      { value: "320%", label: "More revenue from automated emails" },
-      { value: "79%", label: "Leads lost without nurture" }
+      { value: "35-42%", label: "Average Open Rate" },
+      { value: "3-7%", label: "Link Click-through rate" },
+      { value: "4x", label: "Likelihood of referrals from consistent presence" }
     ]
   },
   features: [
-    { title: "Smart Drip Campaigns", description: "Behavior-triggered sequences for buyers, sellers, and investors." },
-    { title: "Property Match Alerts", description: "Automated emails featuring new listings that match client criteria." },
-    { title: "Market Newsletters", description: "Monthly local market stats and trends content created for you." },
-    { title: "Client Retention", description: "Home anniversary, birthday, and home value update emails." },
-    { title: "Behavioral Triggers", description: "Send specific emails when a lead visits your site or clicks a link." },
-    { title: "Re-Engagement", description: "Win-back campaigns that reactivate cold leads from your database." }
+    { title: "New Lead Welcome", description: "Building trust and credibility before prospects are ready to commit." },
+    { title: "Buyer/Seller Nurture", description: "Providing value (guides, stats) throughout the 3-12 month journey." },
+    { title: "Past Client Retention", description: "Home anniversaries and market reports to generate repeat business." },
+    { title: "Cold Lead Reactivation", description: "Specific campaigns designed to recover leads that went silent." },
+    { title: "CRM Sync", description: "Ensuring contacts and activities stay updated without double entry." }
+  ],
+  process: {
+    title: "The Email Programs",
+    steps: [
+      { title: "Import & Clean", desc: "Setting up your database and segmenting by buyer/seller/past client." },
+      { title: "Sequence Build", desc: "Configuring pre-written templates that match your brand voice." },
+      { title: "Automated Loop", desc: "System runs indefinitely, tracking opens and clicks for you." }
+    ]
+  },
+  timeline: [
+    { period: "Short Term", desc: "5-10% of dormant contacts typically re-engage in the first 90 days." },
+    { period: "Long Term", desc: "8-15% of nurtured leads eventually convert versus near-zero without touchpoints." }
   ],
   pricing: [
-    { name: "Starter", price: "$297/mo", features: ["2,500 Contacts", "5 Campaigns", "Monthly Newsletter", "Basic Analytics"] },
-    { name: "Professional", price: "$597/mo", features: ["10,000 Contacts", "Unlimited Campaigns", "Weekly Content", "Advanced Segments"], recommended: true },
-    { name: "Enterprise", price: "$1,197/mo", features: ["50,000 Contacts", "Custom Content", "White Label", "Dedicated Manager"] }
+    { 
+      name: "Email Automation", 
+      price: "$397/mo", 
+      setup: "$200",
+      features: [
+        "Up to 2,500 contacts",
+        "5 pre-built campaigns",
+        "Monthly newsletter",
+        "CRM integration",
+        "Compliance management"
+      ],
+      recommended: true
+    }
   ],
   faq: [
-    { question: "How often should I email?", answer: "New leads get frequent touches (2-3x/week), while long-term nurtures get value 2-4x/month. Our system handles this cadence." },
-    { question: "What should I write?", answer: "We provide all content templates and topic calendars. You don't have to write a word unless you want to." },
-    { question: "Will I end up in spam?", answer: "We handle technical setup (DKIM, SPF) and list hygiene to ensure 97%+ inbox placement rates." }
+    { question: "Won't people get annoyed and unsubscribe?", answer: "Some will. That's okay—they weren't going to use you anyway. Those who stay are your real pipeline." },
+    { question: "Do I have to write the content?", answer: "No. We provide proven real estate templates. You can use as-is or add your local flavor in 30 mins a month." }
   ],
-  ctaText: "Automate Email Marketing"
+  ctaText: "Automate My Database"
 };
 
 export const EmailMarketing: React.FC = () => <ServicePageLayout data={data} />;
